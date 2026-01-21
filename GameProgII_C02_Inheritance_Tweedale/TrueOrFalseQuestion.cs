@@ -8,9 +8,9 @@ namespace GameProgII_C02_Inheritance_Tweedale
 {
     internal class TrueOrFalseQuestion : Question
     {
-        public TrueOrFalseQuestion(string question, bool answerAsBool) : base(question, answerAsBool.ToString()) 
+        public TrueOrFalseQuestion(string question, bool answerAsBool) : base(question, answerAsBool.ToString())
         {
-        
+            
         }
     }
 }

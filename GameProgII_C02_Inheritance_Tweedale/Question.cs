@@ -32,5 +32,10 @@ namespace GameProgII_C02_Inheritance_Tweedale
             if (input.Trim() == _answerText.ToLower().Trim()) return true;
             else return false;
         }
+
+        public string GetAnswer() 
+        {
+            return _answerText;
+        }
     }
 }
