@@ -8,21 +8,21 @@ namespace GameProgII_C02_Inheritance_Tweedale
 {
     internal class Program
     {
-        public static int _score = 0;
-        public static List<Question> _quizQuestions = new List<Question> 
+        private static int _score = 0;
+        private static List<Question> _quizQuestions = new List<Question> 
         {
-            new Question("Who is the FIRST final boss in The Binding of Isaac?", "Mom"),
-            new MultipleChoiceQuestion("Which of these is NOT a real item?", new string[] 
-                { "Guppy's Paw", "Guppy's Eye", "Guppy's Heart", "Guppy's Hairball" }, 3),
-            new TrueOrFalseQuestion("True or False: Isaac and his mother lived alone in a small house on a hill.", true),
-            new Question("What was the most recent PAID DLC for The Binding of Isaac: Rebirth called?", "Repentance"),
-            new MultipleChoiceQuestion("What item does Isaac start with after you unlock it?", new string[] 
-                { "Birthright", "The D6", "Isaac's Tears", "The Poop" }, 2),
-            new TrueOrFalseQuestion("True or False: Eraser is an item added in the Afterbirth DLC.", false),
-            new Question("Which playable non-tainted character CANNOT shoot tears of their own?", "Lilith"),
-            new MultipleChoiceQuestion("Which of these floors is part of the \"alt path\" that leads to fighting Mother?", new string[] 
-                { "Mines", "Necropolis", "Flooded Caves", "Cellar" }, 1),
-            new TrueOrFalseQuestion("True or False: The maximum coin hearts that The Keeper can get is 3.", false)
+            new Question(question: "Who is the FIRST final boss in The Binding of Isaac?", answer: "Mom"),
+            new MultipleChoiceQuestion(question: "Which of these is NOT a real item?", 
+                options: new string[] { "Guppy's Paw", "Guppy's Eye", "Guppy's Heart", "Guppy's Hairball" }, answer: 3),
+            new TrueOrFalseQuestion(question : "True or False: Isaac and his mother lived alone in a small house on a hill.", answerAsBool: true),
+            new Question(question : "What was the most recent PAID DLC for The Binding of Isaac: Rebirth called?", answer: "Repentance"),
+            new MultipleChoiceQuestion(question: "What item does Isaac start with after you unlock it?", 
+                options: new string[] { "Birthright", "The D6", "Isaac's Tears", "The Poop" }, answer: 2),
+            new TrueOrFalseQuestion(question: "True or False: Eraser is an item added in the Afterbirth DLC.", answerAsBool: false),
+            new Question(question: "Which playable non-tainted character CANNOT shoot tears of their own?", answer: "Lilith"),
+            new MultipleChoiceQuestion(question: "Which of these floors is part of the \"alt path\" that leads to fighting Mother?", 
+                options: new string[] { "Mines", "Necropolis", "Flooded Caves", "Cellar" }, answer: 1),
+            new TrueOrFalseQuestion(question: "True or False: The maximum coin hearts that The Keeper can get is 3.", answerAsBool: false)
         };
 
         static void Main(string[] args)
